@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "expresss": "*",
+    "mongodb": "^4.1.3",
+    "node": "^16.10.0"
+  },
+  "name": "zadanie-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Siwiński",
+  "license": "ISC",
+  "description": ""
+}
