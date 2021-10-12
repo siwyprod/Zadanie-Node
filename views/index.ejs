@@ -7,11 +7,27 @@
     <title>STUDENT</title>
 </head>
 <body>
-    <form action="/quotes" method="POST">
+    <form action="/Studenci" method="POST">
         <input type="number" placeholder="album" name="album">
         <input type="text" placeholder="imie" name="imie">
         <input type="text" placeholder="nazwisko" name="nazwisko">
         <button type="submit">ZATWIERDŹ</button>
+        
       </form>
+      <table>
+        <tr>
+            <th>Album</th>
+            <th>Imie</th>
+            <th>Nazwisko</th>
+        </tr>
+        <% for(var i = 0; i < Studenci.length; i++) {%>
+          <tr>
+              <th><%= Studenci[i].album %></th>
+              <th><%= Studenci[i].imie %></th>
+              <th><%= Studenci[i].nazwisko %></th>
+              <th><button>Usuń</button></th>
+          </tr>
+          <% } %>
+    </table>
 </body>
 </html>
